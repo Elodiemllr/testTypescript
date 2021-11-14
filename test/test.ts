@@ -1,7 +1,7 @@
 let a: number = 400;
 const b: string = "hello World";
 const c: number = 3;
-const d: boolean = true;
+const d = true;
 const e: null = null;
 //tableau de chaine de caractere
 const array: string[] = ["un", "deux", "trois"];

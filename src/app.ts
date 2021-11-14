@@ -2,14 +2,17 @@
 console.log(a);
 
 //je recupère mon element qui à l'id compteur (le button)
-const compteur = document.querySelector("#compteur");
+//j'indique et je force le type de ma variable avec 'as'
+const compteur = document.querySelector("#compteur") as HTMLButtonElement;
+//Je peux aussi au lieu d'utiliser as, utiliser <montype>
+//const compteur = <HTMLButtonElement>document.querySelector("#compteur");
 
 //je créer une variable i avec comme valeur 0
 let i = 0
 
 //Puis je créer une function 'increment', avec en params notre event recuperé(notre click)
 //cette function va incrémenter notre variable i 
-const increment (e) => {
+const increment: Function (e) => {
     i++;
     //Puis dans mon button je selectionne la span, 
     //et j'utilise innetText pour modifier le text et lui ajouter notre variable i
