@@ -1,5 +1,5 @@
 "use strict";
-console.log(a);
+console.log("hello world");
 //je recupère mon element qui à l'id compteur (le button)
 //j'indique et je force le type de ma variable avec 'as'
 const compteur = document.querySelector("#compteur");
@@ -26,4 +26,4 @@ const increment = (e) => {
 //j'ajoute un eventListener,
 //Je déclenche cette function au click sur mon element  button
 //le point d'interoggation nous permet de lui dire d'utiliser l'addEventLinstener seulement si notre var compteur existe
-compteur === null || compteur === void 0 ? void 0 : compteur.addEventListener("click", increment);
+compteur.addEventListener("click", increment);

@@ -1,4 +1,4 @@
-console.log(a);
+console.log("hello world");
 
 //je recupère mon element qui à l'id compteur (le button)
 //j'indique et je force le type de ma variable avec 'as'
@@ -30,4 +30,4 @@ const increment = (e: Event) => {
 //j'ajoute un eventListener,
 //Je déclenche cette function au click sur mon element  button
 //le point d'interoggation nous permet de lui dire d'utiliser l'addEventLinstener seulement si notre var compteur existe
-compteur?.addEventListener("click", increment);
+compteur.addEventListener("click", increment);

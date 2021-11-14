@@ -1,4 +1,9 @@
 "use strict";
+const myUser = {
+    firstname: "Elodie",
+    lastname: "Muller",
+    age: 24,
+};
 let a = 400;
 const b = "hello World";
 //| permet de dire "ou" afin de lui donner different type possible
@@ -16,6 +21,10 @@ const user = {
     firstName: "Elodie",
     age: 24,
 };
+const userTest = {
+    firstName: "Elodie",
+    lastName: "Muller",
+};
 const date = new Date();
 /*a = "coucou"; =faux car par le même type*/
 /* Dans cette fonction on va preciser le type du parametre de notre fonction, ici on veut que son parametre 'nomnbre' soit un number */
@@ -31,5 +40,17 @@ const testVoid = () => {
 };
 /* là je demande si a est pair, je dois donc avoir true ou false */
 console.log(isPair(a));
-/*ici une function qui prends en params un tableau 't' et qui a pour function de modifier ce tableau et d'ajouter un salut à chaque fois
- */
+//les generics
+//ici nous avons une fonction qui prends en params un argument et qui le return
+//le generics va nous permettre de dire qu'on veut le même type en entrée et en sortie
+//ici ArgType (qu'on peut appeller comme on veut) est notre type, qui peut être ce que l'on veut, et qu'on remplace par le type voulu lors du retour
+function identity(arg) {
+    return arg;
+}
+const aa = identity("ffe");
+//il peut aussi deviner l'argument a utilisé , le type de retour(l'ArgType)
+//const aa = identity(5);
+function first(arg) {
+    return arg[0];
+}
+const bb = first(["un", "deux", "trois"]);
