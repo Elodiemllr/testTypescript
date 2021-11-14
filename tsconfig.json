@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        //Dans quel fichier je veux compiler
+        "outDir": "Dist",
+        //sur quel sible
+        "target": "ES6",
+        //ici on lui dit que si notre fichier ts contient une erreur alors on ne compile pas
+        "noEmitOnError": true,
+
+        "strict": true
+    },
+
+    "file": ["src/app.ts"]
+}
