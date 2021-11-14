@@ -5,7 +5,7 @@
         //sur quel sible
         "target": "ES6",
         //ici on lui dit que si notre fichier ts contient une erreur alors on ne compile pas
-        "noEmitOnError": true,
+        "noEmitOnError": false,
 
         "strict": true
     },

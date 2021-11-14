@@ -1,6 +1,7 @@
 let a: number = 400;
 const b: string = "hello World";
-const c: number = 3;
+//| permet de dire "ou" afin de lui donner different type possible
+const c: number | string = 3;
 const d = true;
 const e: null = null;
 //tableau de chaine de caractere
