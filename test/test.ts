@@ -24,10 +24,16 @@ const date: Date = new Date();
 
 /* Dans cette fonction on va preciser le type du parametre de notre fonction, ici on veut que son parametre 'nomnbre' soit un number */
 /*On peut aussi preciser le return  que l'on attends, ici par exemple on attends de recevoir true ou false*/
-function isPair(nombre: number): boolean {
+//isPaire est de type function
+//notre params notre est un number et notre function attendra un return  boolean
+//void est utilisé lorsque on n'attends rien en retour
+const isPair: Function = (nombre: number): boolean => {
     return nombre / 2 === 0;
-}
+};
 
+const testVoid: Function = (): void => {
+    console.log("void test");
+};
 /* là je demande si a est pair, je dois donc avoir true ou false */
 console.log(isPair(a));
 
